@@ -1,0 +1,4 @@
+weaver
+======
+
+Javascript animation engine
