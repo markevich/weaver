@@ -4,5 +4,5 @@ weaver
 Javascript animation engine
 
 
-bower install
+bower install  
 grunt test
