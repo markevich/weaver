@@ -1,6 +1,6 @@
 'use strict'
 
-@app.controller 'MainController', ($scope, $timeout) ->
+@app.controller 'MainController', ['$scope', '$timeout', ($scope, $timeout) ->
   $scope.currentFigure =
     attributes:[
       { key: 'rotateY', value: 240 },
@@ -32,3 +32,4 @@
     $('[data-slider]').simpleSlider
       range: [0, 360]
       step: 1
+]

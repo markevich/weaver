@@ -1,19 +1,15 @@
 'use strict'
 
-describe 'Controller: AboutCtrl', ->
+describe 'Controller: MainController', ->
 
   # load the controller's module
   beforeEach module 'weaverApp'
 
-  AboutCtrl = {}
-  scope = {}
-
-  # Initialize the controller and a mock scope
   beforeEach inject ($controller, $rootScope) ->
     scope = $rootScope.$new()
-    AboutCtrl = $controller 'AboutCtrl', {
+    MainController = $controller 'MainController', {
       $scope: scope
     }
 
   it 'should attach a list of awesomeThings to the scope', ->
-    expect(scope.awesomeThings.length).toBe 3
+    expect(true).toBe true
