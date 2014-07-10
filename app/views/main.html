@@ -1,1 +1,14 @@
+<div id="controlls">
+  <div class="controll" ng-repeat="attribute in currentFigure.attributes">
+    <input ng-model="attribute.value" type="text" data-slider="true" data-slider-range="0, 360"/>
+  </div>
+</div>
 
+<div id="viewport">
+  <div ng-class="currentFigure.type">
+    <div
+      ng-repeat="component in currentFigure.components"
+      ng-class="component.type">
+    </div>
+  </div>
+</div>
